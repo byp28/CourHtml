@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../Fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../Fonts/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('../Fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url('../Fonts/Poppins-ExtraBold.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins-Medium;
+}
+header{
+    width: 100%;
+    display: flex;
+    padding: 30px 70px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all ease-in-out .4s;
+    z-index: 1;
+}
+.scrolled{
+    background: #141414;
+}
+p{
+    font-family: Poppins-Medium;
+}
+header h1{
+    color: white;
+}
+header h1 span{
+    color: rgb(252, 10, 60);
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    color: white;
+}
+.Carousel{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}
+.Carousel img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.Carousel h2{
+    color: white;
+    font-size: 60px;
+}
+.Carousel p{
+    color: white;
+    width: 70%;
+    text-align: center;
+}
+button{
+    width: 130px;
+    height: 45px;
+    font-family: Poppins-Light;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    color: white;
+    background-color: rgb(252, 10, 60);
+    border: none;
+}
+h3{
+    font-size: 25px;
+    font-family: Poppins-Light;
+}
+h3 span{
+    font-size: 35px;
+    color: rgb(252, 10, 60);
+    font-family: Poppins-Bold;
+}
+.About{
+    padding: 30px 70px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.About div{
+    width: 48%;
+}
+.About img{
+    width: 48%;
+    height: 250px;
+}
+.OurMenu{
+    padding: 30px 70px;
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+.Menu{
+    display: flex;
+    width: 100%;
+    padding: 0 100px;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Menu .Card{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 260px;
+    padding: 10px 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.200);
+    align-items: center;
+    gap: 5px;
+}
+.Menu .Card p{
+    width: 100%;
+    text-align: justify;
+}
+.Menu .Card img{
+    width: 210px;
+    height: 200px;
+}
+.Expert{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.Expert .Container{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 0;
+}
+.Expert .Container div{
+    width: 220px;
+    height: 325px;
+}
+.Expert .Container div img{
+    width: 220px;
+}
+.Said{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.Said .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.Said .Container{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.Said .Container .Card{
+    width: 300px;
+    height: 380px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.Said .Container div img{
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+}
+.Said .Container div p{
+    color: rgb(200, 200, 200);
+    text-align: center;
+    width: 85%;
+}
+.Said .Container div a{
+    color: rgb(252, 10, 60);
+    font-family: 'Poppins-Bold';
+    text-decoration: none;
+}
+.Contact{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Contact img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.Contact div{
+    width: 80%;
+    padding: 50px 0;
+}
+.Contact form{
+    width: 380px;
+    height: 350px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 30px #00000020;
+}
+.Contact form input, textarea{
+    width: 100%;
+    height: 35px;
+    border: rgb(220, 220, 220) 2px solid;
+    padding: 10px;
+    outline: none;
+}
+textarea{
+    height: 70px;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    border-top: rgb(220, 220, 220) 1.5px solid;
+    justify-content: center;
+}

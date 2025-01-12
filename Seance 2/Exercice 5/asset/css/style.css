@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 250px;
+    background: rgb(248, 220, 169);
+    gap: 25px;
+}
+header{
+    border-bottom: 1.5px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+h2 img{
+    width: 40px;
+    height: 40px;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul li, h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.slider{
+    width: 100%;
+    background-color: antiquewhite;
+    height: 240px;
+    border-radius: 10px;
+    position: relative;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.slider div{
+    width: 100%;
+    padding: 10px 8px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+}
+.slider div button{
+    width: 105px;
+    height: 26px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: linear-gradient(0deg, rgb(114, 0, 0),rgb(255, 48, 48));
+    color: white;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+}
+.main div{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: justify;
+}
+.main aside{
+    width: 35%;
+    height: auto;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 12px;
+    color: white;
+    border-radius: 10px;
+}
+.main aside .perso{
+    width: 160px;
+    height: 170px;
+    align-self: center;
+}
+aside section{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 5px;
+}
+aside section img{
+    width: 50px;
+    height: 100%;
+}
+footer{
+    display: flex;
+    width: 100%;
+    padding: 40px 0;
+    justify-content: space-between;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+.last{
+    width: 350px;
+}
+footer div ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80px;
+    padding-left: 20px;
+}
+.photo{
+    height: 65px;
+    width: 260px;
+    justify-content: space-between;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+}
+.photo img{
+    width: 60px;
+    height: 100%;
+}
