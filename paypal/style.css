@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Da 2";
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    padding: 4px;
+    border-bottom:  1px   solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    z-index: 10;
+}
+header .logo{
+    font-weight: 700;
+    text-orientation: sideways;
+    font-size: 40px;
+    margin-right: 8px;
+    color: #bbb;
+    position: relative;
+    z-index: 1;
+}
+header .logo::before{
+    position: absolute;
+    content: "P";
+    left: -3px;
+    top: -3px;
+    color: #fff;
+    font-size: 40px;
+}
+
+header nav{
+    display: flex;
+    gap : 18px;
+    align-items: center;
+    text-decoration: none;
+}
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+header div {
+    display: flex;
+    gap : 8px;
+    align-items: center;
+}
+header div button{
+    width: 85px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+}
+header div button:nth-child(1){
+    color: #fff;
+    border: #fff 1px solid;
+    background: transparent;
+}
+.banner{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 25px;
+}
+.banner img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.banner .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2020206b;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.banner h2{
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    font-size: 55px;
+    font-weight: 400;
+}
+.banner p{
+    color: #fff;
+    z-index: 3;
+    text-align: center;
+    font-size: 17px;
+    width: 600px;
+}
+.banner button{
+    width: 400px;
+    height: 45px;
+    background: #036bb1;
+    border: none;
+    border-radius: 20px;
+    z-index: 3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.section{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.section h3{
+    font-size: 35px;
+    font-weight: 500;
+}
+.section .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.section .container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+.section .container div i{
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    color:  #229fe7;
+}
+.section .container div h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+.section .container div p{
+    width: 300px;
+    font-weight: 600;
+}
+.section .container div button{
+    width: 160px;
+    border: 2px #036bb1 solid;
+    color: #036bb1;
+    background-color: transparent;
+    height: 50px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+.comment{
+    background:  linear-gradient(to right, #066399, #2f8fdf, #066399);
+    color: #fff;
+    height: 80vh;
+}
+.comment .container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    padding: 25px;
+}
+.comment .container div{
+    width: 300px;
+}
+.ordi .container{
+    justify-content: space-around;
+    align-items: self-start;
+    padding: 15px 100px;
+}
+.ordi .container img{
+    width: 480px;
+}
+.ordi .container .stage div{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    width: 550px;
+}
+.ordi .container .stage div p{
+    width: 500px;
+}
+.ordi .container .stage div p a{
+    text-decoration: none;
+    color:#036bb1;
+}
+.ordi .container .stage div span{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: #000 solid 1.5px;
+}
+.sign{
+    background: #b8e1f8;
+    height: 55vh;
+}
+.sign button{
+    width: 300px;
+    height: 45px;
+    background: #036bb1;
+    border: none;
+    border-radius: 20px;
+    z-index: 3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer{
+    height: 30vh;
+    padding: 0 160px;
+}
+.footer div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px #000 dashed;
+}
+.footer div nav{
+    display: flex;
+    gap: 20px;
+}
+.footer div nav img{
+    width: 30px;
+}
+.footer div nav a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
